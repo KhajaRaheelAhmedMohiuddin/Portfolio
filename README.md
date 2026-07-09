@@ -1,32 +1,72 @@
 # Khaja Raheel Ahmed Mohiuddin — Portfolio
 
-Personal portfolio of a Software Engineer & AI Specialist focused on RLHF, LLM evaluation, and frontend engineering.
+A modern, interactive portfolio showcasing my work as a **Software Engineer & AI Specialist** — RLHF, LLM evaluation, and frontend engineering.
 
-**Built with:** React 19, TypeScript, Vite, Tailwind CSS v4, Motion (Framer Motion), Lenis smooth scroll.
+**Live site:** [your-portfolio.vercel.app](https://your-portfolio.vercel.app) <!-- update after deploying -->
 
-## Features
+## Highlights
 
-- Glassmorphism design with animated gradient background and custom cursor
-- Interactive terminal in the hero section (try `help`)
-- Fully responsive, scroll-driven animations
+- **Interactive terminal** in the hero — type `help` and ask questions about my experience, skills, and projects
+- **Editorial design** — glassmorphism panels, animated gradient background, custom cursor, 3D tilt cards
+- **Smooth scrolling** powered by Lenis, with scroll-driven parallax and staggered section reveals
+- **Accessible** — respects `prefers-reduced-motion`, semantic markup, ARIA labels
+- **Performant** — reduced GPU load on mobile, preloaded assets, ~123 kB gzipped JS
+- **SEO-ready** — Open Graph and Twitter meta tags for clean social sharing
 
-## Run locally
+## Tech Stack
+
+| Category  | Tools                                      |
+| --------- | ------------------------------------------ |
+| Framework | React 19, TypeScript                       |
+| Build     | Vite 6                                     |
+| Styling   | Tailwind CSS v4                            |
+| Animation | Motion (Framer Motion), Lenis smooth scroll |
+| Icons     | Lucide React                               |
+
+## Getting Started
 
 ```bash
+# Clone the repository
+git clone https://github.com/KhajaRaheelAhmedMohiuddin/Portfolio.git
+cd Portfolio
+
+# Install dependencies
 npm install
+
+# Start the dev server
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Build
+### Other commands
 
 ```bash
-npm run build
-npm run preview
+npm run build     # Production build (outputs to dist/)
+npm run preview   # Preview the production build locally
+npm run lint      # Type-check with TypeScript
 ```
+
+## Project Structure
+
+```
+├── public/            # Static assets (resume, logos, favicon)
+├── src/
+│   ├── components/    # UI components (Hero, Experience, Skills, Projects, ...)
+│   ├── data.ts        # Single source of truth for resume content
+│   ├── App.tsx        # Layout, smooth scroll & motion configuration
+│   └── index.css      # Theme tokens & global styles
+└── index.html         # Entry point with SEO meta tags
+```
+
+All resume content lives in `src/data.ts` — update it in one place and the entire site stays consistent.
 
 ## Contact
 
-- Email: khajarahil0909@gmail.com
-- LinkedIn: https://www.linkedin.com/in/khajaraheelahmedmohiuddin/
+- **Email:** [khajarahil0909@gmail.com](mailto:khajarahil0909@gmail.com)
+- **LinkedIn:** [khajaraheelahmedmohiuddin](https://www.linkedin.com/in/khajaraheelahmedmohiuddin/)
+- **GitHub:** [KhajaRaheelAhmedMohiuddin](https://github.com/KhajaRaheelAhmedMohiuddin)
+
+---
+
+© 2026 Khaja Raheel Ahmed Mohiuddin. All rights reserved.

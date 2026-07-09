@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Mail, MapPin, Phone, Linkedin, Github, Download } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { RESUME_DATA } from '../data';
 import TerminalWindow from './TerminalWindow';
 
@@ -8,18 +9,29 @@ export default function Hero() {
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
+  // On mobile the hero stacks vertically and extends past the fade distance,
+  // so scroll-fade/parallax would hide content before it's ever seen.
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)');
+    setIsDesktop(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+
   return (
     <section className="relative min-h-[95vh] flex flex-col justify-center pt-32 overflow-hidden">
       {/* Editorial Watermark */}
       <motion.div 
         style={{ y: useTransform(scrollY, [0, 500], [0, -100]) }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[25rem] lg:text-[40rem] font-serif leading-none text-outline select-none pointer-events-none z-0 opacity-80 md:opacity-80"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[25rem] lg:text-[40rem] font-serif leading-none text-outline select-none pointer-events-none z-0 opacity-30 md:opacity-80"
       >
         KM.
       </motion.div>
       
-      <motion.div 
-        style={{ y, opacity }}
+      <motion.div
+        style={isDesktop ? { y, opacity } : undefined}
         className="container mx-auto px-6 max-w-6xl relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-center"
       >
         <div className="lg:col-span-7 flex flex-col items-start">

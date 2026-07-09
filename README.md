@@ -2,7 +2,7 @@
 
 A modern, interactive portfolio showcasing my work as a **Software Engineer & AI Specialist** — RLHF, LLM evaluation, and frontend engineering.
 
-**Live site:** [your-portfolio.vercel.app](https://your-portfolio.vercel.app) <!-- update after deploying -->
+**Live site:** [khajaraheel.vercel.app](https://khajaraheel.vercel.app)
 
 ## Highlights
 
@@ -15,13 +15,14 @@ A modern, interactive portfolio showcasing my work as a **Software Engineer & AI
 
 ## Tech Stack
 
-| Category  | Tools                                      |
-| --------- | ------------------------------------------ |
-| Framework | React 19, TypeScript                       |
-| Build     | Vite 6                                     |
-| Styling   | Tailwind CSS v4                            |
+| Category  | Tools                                       |
+| --------- | ------------------------------------------- |
+| Framework | React 19, TypeScript                        |
+| Build     | Vite 6                                      |
+| Styling   | Tailwind CSS v4                             |
 | Animation | Motion (Framer Motion), Lenis smooth scroll |
-| Icons     | Lucide React                               |
+| Icons     | Lucide React                                |
+| Hosting   | Vercel                                      |
 
 ## Getting Started
 
@@ -60,6 +61,10 @@ npm run lint      # Type-check with TypeScript
 ```
 
 All resume content lives in `src/data.ts` — update it in one place and the entire site stays consistent.
+
+## Deployment
+
+Hosted on [Vercel](https://vercel.com). Every push to `main` triggers an automatic production deployment.
 
 ## Contact
 

@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { RESUME_DATA } from '../data';
 import TiltCard from './TiltCard';
-import { Receipt, Smartphone, Shield, Plane, LockKeyhole, FileText } from 'lucide-react';
+import { Receipt, Smartphone, Shield, Plane, LockKeyhole, FileText, Search, Github, ExternalLink } from 'lucide-react';
 
 const PROJECT_ICONS: Record<string, React.ElementType> = {
+  "RAG Eval Service": Search,
   "SmartBill": Receipt,
   "FreshFold": Smartphone,
   "Intrusion Detection System": Shield,
@@ -29,7 +30,8 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {RESUME_DATA.projects.map((project, index) => {
             const Icon = PROJECT_ICONS[project.title] || FileText;
-            
+            const link = 'link' in project ? project.link : undefined;
+
             return (
             <motion.div 
               key={index}
@@ -55,6 +57,19 @@ export default function Projects() {
                     <p className="text-zinc-400 text-sm leading-relaxed">
                       {project.description}
                     </p>
+
+                    {link && (
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-auto pt-6 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors w-fit"
+                      >
+                        <Github className="w-4 h-4" />
+                        View on GitHub
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </TiltCard>

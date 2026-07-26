@@ -59,6 +59,12 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "RAG Eval Service",
+      tech: "Python, FastAPI, LangChain",
+      description: "Production-style RAG microservice with hybrid retrieval (BM25 + TF-IDF fused via Reciprocal Rank Fusion), neural cross-encoder re-ranking, prompt versioning, PII guardrails, and a built-in evaluation harness measuring hit-rate and MRR.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/rag-eval-service"
+    },
+    {
       title: "SmartBill",
       tech: "React, Bootstrap",
       description: "Feature-rich web application for generating, customizing, and exporting invoices in PDF/Excel. Integrated QR Code Generation and Digital Signatures."

@@ -66,7 +66,7 @@ export default function TerminalWindow() {
       } else if (q.includes('how do you work') || q.includes('work style') || q.includes('workflow')) {
         answer = "I work iteratively and systematically. I thrive in environments where I can analyze complex edge cases, develop rigorous evaluation scripts, and continuously refine model outputs.";
       } else if (q.includes('project') || q.includes('grizzly') || q.includes('toucan') || q.includes('p13n')) {
-        answer = "My key projects are Grizzly (LLM code intelligence), Toucan (RLHF system training), and P13N (AI personalization) — all Google-aligned work at Invisible Technologies. Earlier: an IoT intrusion detection system with 96.3% accuracy and an airfare prediction ML model. Scroll down to Selected Works for details.";
+        answer = "My flagship open-source project is RAG Eval Service — a production-style RAG microservice with hybrid retrieval and a built-in eval harness (on my GitHub). Professionally: Grizzly (LLM code intelligence), Toucan (RLHF training), and P13N (AI personalization), all Google-aligned at Invisible Technologies. Scroll down to Selected Works for details.";
       } else if (q.includes('python') && (q.includes('good') || q.includes('level') || q.includes('rate'))) {
         answer = "I'm highly proficient. I specialize in writing clean, scalable, and idiomatic Python code, particularly in the context of data science, APIs, and AI workflows.";
       } else if (q.includes('python')) {

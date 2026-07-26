@@ -77,7 +77,8 @@ export const RESUME_DATA = {
     {
       title: "Intrusion Detection System",
       tech: "Machine Learning, IoT",
-      description: "Achieved 96.3% accuracy in IoT threat classification by optimizing feature selection from UNSW-NB15 and Bot-IoT datasets."
+      description: "Achieved 96.3% accuracy in IoT threat classification by optimizing feature selection from UNSW-NB15 and Bot-IoT datasets.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/web-based-analysis-ids"
     },
     {
       title: "Airfare Prediction System",

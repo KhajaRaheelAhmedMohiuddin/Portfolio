@@ -76,8 +76,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Intrusion Detection System",
-      tech: "Machine Learning, IoT",
-      description: "Achieved 96.3% accuracy in IoT threat classification by optimizing feature selection from UNSW-NB15 and Bot-IoT datasets.",
+      tech: "Python, TensorFlow (LSTM), Flask",
+      description: "Protocol-Based Deep Intrusion Detection (PB-DID): a stacked-LSTM classifier labeling network flows as Normal, DoS, or DDoS, trained on UNSW-NB15 and Bot-IoT. 98.05% accuracy validated with feature-set ablation, served via a Flask dashboard, CLI, and JSON API.",
       link: "https://github.com/KhajaRaheelAhmedMohiuddin/web-based-analysis-ids"
     },
     {

@@ -87,8 +87,9 @@ export const RESUME_DATA = {
     },
     {
       title: "StegoSecure",
-      tech: "Python",
-      description: "Built an encryption tool using LSB substitution to securely hide text messages within BMP, GIF, and JPG images."
+      tech: "Python, Cryptography, Tkinter",
+      description: "Desktop app that hides encrypted text inside PNG images via LSB steganography. Messages are Fernet-encrypted with scrypt-derived keys and embedded in a versioned, authenticated payload format that rejects wrong passwords or tampered images — wrapped in a guided two-step Tkinter UI.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/image-steganography"
     }
   ],
   education: [

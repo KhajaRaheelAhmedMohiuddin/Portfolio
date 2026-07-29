@@ -82,8 +82,9 @@ export const RESUME_DATA = {
     },
     {
       title: "Airfare Prediction System",
-      tech: "Machine Learning",
-      description: "Designed an ML-based prediction model achieving 80-90% accuracy for cost-effective flight bookings."
+      tech: "Python, Scikit-learn, LightGBM, Streamlit",
+      description: "Stacked ensemble of five learners (LightGBM, XGBoost, CatBoost, forests) predicting Indian domestic airfares with R² 0.9165 and 94.1% accuracy, 10-fold cross-validated with leak-proof target encoding. Includes a booking advisor that ranks the cheapest flights and travel dates with measured reliability, served via a Streamlit app.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/airfare-prediction-system"
     },
     {
       title: "StegoSecure",

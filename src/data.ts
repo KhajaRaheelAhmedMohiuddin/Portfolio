@@ -66,8 +66,9 @@ export const RESUME_DATA = {
     },
     {
       title: "SmartBill",
-      tech: "React, Bootstrap",
-      description: "Feature-rich web application for generating, customizing, and exporting invoices in PDF/Excel. Integrated QR Code Generation and Digital Signatures."
+      tech: "React, TypeScript, Tailwind, shadcn/ui",
+      description: "Browser-based invoice generator with a live-preview editor, multi-currency support, six themes, and three layouts. Exports pixel-accurate PDFs (jsPDF), Excel, and JSON, with QR code verification and draw-to-sign digital signatures — no backend required, heavy export libraries code-split on demand.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/SmartBill"
     },
     {
       title: "FreshFold",

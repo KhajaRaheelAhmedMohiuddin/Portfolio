@@ -241,7 +241,8 @@ export default function TerminalWindow() {
 
       <div
         ref={containerRef}
-        className="h-[200px] p-4 overflow-y-auto no-scrollbar scroll-smooth flex flex-col gap-2"
+        data-lenis-prevent
+        className="h-[200px] p-4 overflow-y-auto no-scrollbar scroll-smooth flex flex-col gap-2 overscroll-contain"
         onClick={() => inputRef.current?.focus({ preventScroll: true })}
       >
         {logs.map((log) => (
@@ -260,6 +261,9 @@ export default function TerminalWindow() {
         <form onSubmit={handleCommand} className="flex items-center gap-2 text-zinc-300 mt-1 relative z-10 w-full shrink-0">
            <span className="text-fuchsia-400 shrink-0">➜</span>
            <span className="text-cyan-400 shrink-0">~</span>
+           {!isFocused && !input && (
+             <span className="w-2 h-4 bg-zinc-400/70 animate-pulse shrink-0" aria-hidden="true" />
+           )}
            <input
              ref={inputRef}
              type="text"
@@ -274,9 +278,6 @@ export default function TerminalWindow() {
              spellCheck="false"
              autoComplete="off"
            />
-           {!isFocused && !input && (
-             <span className="w-2 h-4 bg-zinc-400/70 animate-pulse shrink-0" aria-hidden="true" />
-           )}
         </form>
       </div>
 

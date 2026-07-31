@@ -1,15 +1,17 @@
 import React, { MouseEvent } from 'react';
 import { motion, useMotionTemplate, useMotionValue } from 'motion/react';
 import { RESUME_DATA } from '../data';
-import { Brain, Monitor, CheckCircle, Zap, Code2, Database } from 'lucide-react';
+import { Brain, Monitor, CheckCircle, Server, Code2, Database, LineChart, Smartphone } from 'lucide-react';
 
 const CATEGORY_ICONS: Record<string, React.ElementType> = {
-  "AI / LLM": Brain,
+  "AI / LLM Engineering": Brain,
+  "ML & Data": LineChart,
+  "Languages": Code2,
+  "Backend & Frameworks": Server,
   "Frontend": Monitor,
-  "Testing & QA": CheckCircle,
-  "Performance & State": Zap,
-  "Languages & Mobile": Code2,
-  "Tools & DB": Database
+  "Mobile": Smartphone,
+  "Testing & Quality": CheckCircle,
+  "Tools & Practices": Database
 };
 
 const SkillCard: React.FC<{ skillGroup: { category: string, items: string[] }, index: number }> = ({ skillGroup, index }) => {

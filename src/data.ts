@@ -11,12 +11,14 @@ export const RESUME_DATA = {
   },
   summary: "Software Engineer and AI Specialist with expertise in Reinforcement Learning with Human Feedback (RLHF), LLM evaluation, and real-world code generation systems. Delivered 1500+ high-quality AI training and evaluation tasks across Google-aligned projects, ensuring code correctness, test coverage, and production readiness.",
   skills: [
-    { category: "AI / LLM", items: ["RLHF", "Prompt Engineering", "LLM Evaluation", "Response Ranking", "AI Quality Review"] },
-    { category: "Frontend", items: ["React JS", "JavaScript", "TypeScript", "HTML", "CSS", "SCSS", "Bootstrap"] },
-    { category: "Testing & QA", items: ["Jest", "React Testing Library", "SonarQube", "Unit Testing"] },
-    { category: "Performance & State", items: ["Redux", "Context API", "Code Splitting", "Lazy Loading", "Webpack"] },
-    { category: "Languages & Mobile", items: ["Java", "Python", "Kotlin", "React Native", "Android"] },
-    { category: "Tools & DB", items: ["Git", "GitHub", "GitLab", "CI/CD", "Agile", "SQL", "Power BI"] }
+    { category: "AI / LLM Engineering", items: ["RLHF", "LLM Evaluation", "Prompt Engineering & Versioning", "RAG Pipelines", "Hybrid Retrieval (BM25 + RRF)", "Re-ranking", "Guardrails & HITL", "Response Ranking"] },
+    { category: "ML & Data", items: ["Scikit-learn", "LightGBM", "XGBoost", "CatBoost", "TensorFlow (LSTM)", "Pandas", "NumPy", "Feature Engineering", "Model Evaluation"] },
+    { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "Kotlin", "Java", "SQL"] },
+    { category: "Backend & Frameworks", items: ["FastAPI", "LangChain", "Flask", "Streamlit", "Pydantic", "REST APIs"] },
+    { category: "Frontend", items: ["React", "Redux", "Context API", "Tailwind CSS", "shadcn/ui", "Vite", "HTML", "CSS", "SCSS"] },
+    { category: "Mobile", items: ["Jetpack Compose", "Room", "MVVM", "React Native", "Android"] },
+    { category: "Testing & Quality", items: ["Pytest", "Jest", "React Testing Library", "Robolectric", "SonarQube", "Unit Testing"] },
+    { category: "Tools & Practices", items: ["Git", "GitHub Actions", "CI/CD", "Docker", "GitLab", "Agile", "Power BI"] }
   ],
   experience: [
     {

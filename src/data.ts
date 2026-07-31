@@ -65,6 +65,12 @@ export const RESUME_DATA = {
       link: "https://github.com/KhajaRaheelAhmedMohiuddin/rag-eval-service"
     },
     {
+      title: "ScoreX - Cricket Scorer",
+      tech: "Kotlin, Jetpack Compose, Room",
+      description: "Offline Android cricket-scoring app with ball-by-ball scoring, live batting, bowling, and partnership stats, full scorecards, analytics, match history, undo/redo, and Super Overs. MVVM with StateFlow and Room persistence, backed by 63 automated tests running in GitHub Actions CI.",
+      link: "https://github.com/KhajaRaheelAhmedMohiuddin/scorex-cricket-scorer"
+    },
+    {
       title: "SmartBill",
       tech: "React, TypeScript, Tailwind, shadcn/ui",
       description: "Browser-based invoice generator with a live-preview editor, multi-currency support, six themes, and three layouts. Exports pixel-accurate PDFs (jsPDF), Excel, and JSON, with QR code verification and draw-to-sign digital signatures — no backend required, heavy export libraries code-split on demand.",

@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { RESUME_DATA } from '../data';
 import TiltCard from './TiltCard';
-import { Receipt, Smartphone, Shield, Plane, LockKeyhole, FileText, Search, Github, ExternalLink } from 'lucide-react';
+import { Receipt, Smartphone, Shield, Plane, LockKeyhole, FileText, Search, Github, ExternalLink, Trophy } from 'lucide-react';
 
 const PROJECT_ICONS: Record<string, React.ElementType> = {
   "RAG Eval Service": Search,
+  "ScoreX - Cricket Scorer": Trophy,
   "SmartBill": Receipt,
   "FreshFold": Smartphone,
   "Intrusion Detection System": Shield,

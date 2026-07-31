@@ -2,7 +2,15 @@
 
 A modern, interactive portfolio showcasing my work as a **Software Engineer & AI Specialist** — RLHF, LLM evaluation, and frontend engineering.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![Deployed on Vercel](https://img.shields.io/badge/deployed-Vercel-black?logo=vercel)](https://khajaraheel.vercel.app)
+
 **Live site:** [khajaraheel.vercel.app](https://khajaraheel.vercel.app)
+
+![Portfolio hero section](docs/screenshot-hero.png)
 
 ## Highlights
 
@@ -51,6 +59,7 @@ npm run lint      # Type-check with TypeScript
 ## Project Structure
 
 ```
+├── docs/              # README screenshots
 ├── public/            # Static assets (resume, logos, favicon)
 ├── src/
 │   ├── components/    # UI components (Hero, Experience, Skills, Projects, ...)
@@ -72,6 +81,6 @@ Hosted on [Vercel](https://vercel.com). Every push to `main` triggers an automat
 - **LinkedIn:** [khajaraheelahmedmohiuddin](https://www.linkedin.com/in/khajaraheelahmedmohiuddin/)
 - **GitHub:** [KhajaRaheelAhmedMohiuddin](https://github.com/KhajaRaheelAhmedMohiuddin)
 
----
+## License
 
-© 2026 Khaja Raheel Ahmed Mohiuddin. All rights reserved.
+Released under the [MIT License](LICENSE) © 2026 Khaja Raheel Ahmed Mohiuddin.

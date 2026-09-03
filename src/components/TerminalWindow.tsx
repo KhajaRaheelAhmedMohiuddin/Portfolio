@@ -190,7 +190,7 @@ export default function TerminalWindow() {
       output = (
         <div className="text-zinc-300">
           <a
-            href="/KhajaRaheel_Resume_AIEngineer.pdf"
+            href="/KhajaRaheel_Resume_PromptEngineer.pdf"
             download
             className="text-emerald-400 underline underline-offset-4 hover:text-emerald-300"
           >

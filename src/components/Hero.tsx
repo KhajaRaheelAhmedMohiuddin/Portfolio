@@ -103,7 +103,7 @@ export default function Hero() {
             </div>
 
             <a
-              href="/KhajaRaheel_Resume_AIEngineer.pdf"
+              href="/KhajaRaheel_Resume_PromptEngineer.pdf"
               download
               className="relative z-10 flex items-center justify-center gap-2 w-full bg-white text-zinc-900 text-sm font-semibold px-5 py-3 rounded-full hover:bg-zinc-200 transition-colors"
             >

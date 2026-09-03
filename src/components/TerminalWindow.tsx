@@ -82,7 +82,6 @@ export default function TerminalWindow() {
   const [history, setHistory] = useState<string[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [logs, setLogs] = useState<CommandLog[]>([createInitLog()]);
-  const [isScrollable, setIsScrollable] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -90,9 +89,26 @@ export default function TerminalWindow() {
     const el = containerRef.current;
     if (el) {
       el.scrollTop = el.scrollHeight;
-      setIsScrollable(el.scrollHeight > el.clientHeight + 1);
     }
   }, [logs]);
+
+  // Let the terminal absorb scroll only while it has room; at its top/bottom
+  // edge (or when it has no overflow) the wheel passes through to page scroll.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const onWheel = (e: WheelEvent) => {
+      const { scrollTop, scrollHeight, clientHeight } = el;
+      if (scrollHeight <= clientHeight + 1) return;
+      const atTop = scrollTop <= 0;
+      const atBottom = scrollTop + clientHeight >= scrollHeight - 1;
+      if ((e.deltaY > 0 && !atBottom) || (e.deltaY < 0 && !atTop)) {
+        e.stopPropagation();
+      }
+    };
+    el.addEventListener('wheel', onWheel, { passive: true });
+    return () => el.removeEventListener('wheel', onWheel);
+  }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'ArrowUp') {
@@ -247,7 +263,6 @@ export default function TerminalWindow() {
 
       <div
         ref={containerRef}
-        {...(isScrollable ? { 'data-lenis-prevent': true } : {})}
         className="h-[200px] p-4 overflow-y-auto no-scrollbar scroll-smooth flex flex-col gap-2 overscroll-contain"
         onClick={() => inputRef.current?.focus({ preventScroll: true })}
       >

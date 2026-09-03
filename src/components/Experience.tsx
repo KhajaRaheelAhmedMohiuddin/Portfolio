@@ -3,9 +3,9 @@ import { RESUME_DATA } from '../data';
 import TiltCard from './TiltCard';
 
 const COMPANY_LOGOS: Record<string, { src: string; alt: string; className?: string }> = {
-  "Meridial (Invisible Technologies)": {
+  "Meridial AI (Invisible Technologies)": {
     src: "/logos/meridial.png",
-    alt: "Meridial Marketplace, by Invisible logo"
+    alt: "Meridial AI, by Invisible Technologies logo"
   },
   "Soul AI by Deccan AI": {
     src: "/logos/soul-ai.png",

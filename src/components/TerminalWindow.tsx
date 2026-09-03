@@ -25,16 +25,19 @@ const answerFor = (q: string): string => {
   const hasWord = (word: string) => new RegExp(`\\b${word}\\b`).test(q);
 
   if (has('hire', 'why you', 'why should')) {
-    return "I bring a meticulous approach to AI training. I don't just write code; I ensure models learn the exact logic, safety, and reasoning required for production.";
+    return "I break frontier models for a living and then explain precisely why they broke. That means rigorous, source-verified evaluation work — plus the engineering background to build the tooling around it.";
   }
   if (has('bring', 'table', 'offer', 'strength')) {
-    return "I offer a unique blend of deep Python expertise and hands-on experience in fine-tuning LLM behaviors, ensuring high-quality data pipelines and model reliability.";
+    return "A rare combination: adversarial evaluation rigor (red-teaming, source verification, benchmark design) paired with real software engineering in Python, React, and production systems.";
+  }
+  if (has('adversarial', 'red-team', 'red team', 'stump', 'benchmark', 'prompt engineering', 'prompt design')) {
+    return "At Handshake AI I design adversarial 'model stumping' prompts that expose web-search and retrieval-reasoning failures in a frontier LLM — every accepted task must defeat the model on at least 4 of 8 automated evaluation runs, with each fact verified against 3+ independent primary sources.";
   }
   if (has('how do you work', 'work style', 'workflow', 'approach')) {
     return "I work iteratively and systematically. I thrive in environments where I can analyze complex edge cases, develop rigorous evaluation scripts, and continuously refine model outputs.";
   }
   if (has('project', 'grizzly', 'toucan', 'p13n', 'built', 'build')) {
-    return "My flagship open-source project is RAG Eval Service — a production-style RAG microservice with hybrid retrieval and a built-in eval harness. Also ScoreX (Kotlin cricket scorer), SmartBill, and ML work on intrusion detection and airfare prediction. Professionally: Grizzly, Toucan, and P13N at Invisible Technologies. Type 'projects' for the list.";
+    return "My flagship open-source project is RAG Eval Service — a production-style RAG microservice with hybrid retrieval and a built-in eval harness. Also ScoreX (Kotlin cricket scorer), SmartBill, and ML work on intrusion detection and airfare prediction. Professionally: Seal at Handshake AI, and Grizzly, Toucan, and P13N at Meridial AI. Type 'projects' for the list.";
   }
   if (q.includes('python') && has('good', 'level', 'rate', 'strong', 'proficient')) {
     return "I'm highly proficient. I specialize in writing clean, scalable, and idiomatic Python code, particularly in the context of data science, APIs, and AI workflows.";
@@ -52,13 +55,13 @@ const answerFor = (q: string): string => {
     return "Absolutely. I spend my days identifying hallucination patterns, ensuring absolute instruction adherence, and improving the logical reasoning capabilities of advanced LLMs.";
   }
   if (hasWord('ai') || has('rlhf', 'experience', 'machine learning')) {
-    return "I've served as an AI Trainer and Reviewer, delivering 1500+ training tasks and auditing 1000+ model outputs, focusing on RLHF pipelines and enhancing model reasoning and safety.";
+    return "I'm currently a Prompt Engineer at Handshake AI doing adversarial LLM evaluation and red-teaming. Before that, as an AI Trainer and Reviewer at Meridial AI, I delivered 1500+ training tasks and audited 1000+ model outputs across RLHF pipelines.";
   }
   if (has('fun', 'hobb', 'free time', 'outside work')) {
     return "When I'm not shaping AI behavior, I'm probably dissecting new tech, tinkering with side projects, or stepping away from the screen for some cricket, gaming, or reading.";
   }
   if (has('what do you do', 'role', 'where do you work', 'current', 'company', 'job')) {
-    return "I'm currently a Master Python Coding Specialist & AI Trainer at Meridial (Invisible Technologies), working on Google-aligned AI projects — 1500+ training tasks delivered and 1000+ model outputs reviewed.";
+    return "I'm a Prompt Engineer at Handshake AI, working on adversarial LLM evaluation and red-teaming for frontier-model web-search benchmarks. Previously Master Python Coding Specialist & AI Trainer at Meridial AI (Invisible Technologies) on Google-aligned projects.";
   }
   if (has('education', 'degree', 'college', 'university', 'cgpa', 'study', 'graduat')) {
     return "B.Tech in Computer Science & Engineering from Balaji Institute of Technology and Science, Warangal (2019-2023), CGPA 7.71 — affiliated with JNTU Hyderabad.";
@@ -129,8 +132,8 @@ export default function TerminalWindow() {
           <div className="pl-4 text-zinc-500 text-xs mt-1 mb-2">
             Try asking about:<br/>
             hiring me · what I bring · how I work · my role <br/>
-            python · react · kotlin · projects · AI / LLM <br/>
-            education · certifications · contact · hobbies
+            red-teaming · prompt design · AI / LLM · projects <br/>
+            python · react · kotlin · education · contact
           </div>
           - <span className="text-emerald-400">whoami</span>: Who I am <br/>
           - <span className="text-emerald-400">skills</span>: Technical skills <br/>

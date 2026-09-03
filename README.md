@@ -1,6 +1,6 @@
 # Khaja Raheel Ahmed Mohiuddin — Portfolio
 
-A modern, interactive portfolio showcasing my work as a **Software Engineer & AI Specialist** — RLHF, LLM evaluation, and frontend engineering.
+A modern, interactive portfolio showcasing my work as a **Prompt Engineer & LLM Specialist** — adversarial evaluation, red-teaming, RLHF, and RAG systems.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)

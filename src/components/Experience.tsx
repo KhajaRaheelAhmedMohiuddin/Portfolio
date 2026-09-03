@@ -3,6 +3,10 @@ import { RESUME_DATA } from '../data';
 import TiltCard from './TiltCard';
 
 const COMPANY_LOGOS: Record<string, { src: string; alt: string; className?: string }> = {
+  "Handshake AI": {
+    src: "/logos/handshake-ai.png",
+    alt: "Handshake AI logo"
+  },
   "Meridial AI (Invisible Technologies)": {
     src: "/logos/meridial.png",
     alt: "Meridial AI, by Invisible Technologies logo"

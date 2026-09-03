@@ -9,7 +9,7 @@ export const RESUME_DATA = {
     github: "https://github.com/KhajaRaheelAhmedMohiuddin",
     location: "Warangal, Telangana, India"
   },
-  summary: "Prompt Engineer specializing in adversarial LLM evaluation, red-teaming, and advanced prompt design, building source-verified benchmark tasks that expose frontier-model web-search and retrieval failure modes. Previously delivered 1500+ production-grade LLM training and evaluation tasks on Google-aligned projects, promoted to Reviewer — backed by a software engineering background in Python, React, and production systems.",
+  summary: "Prompt Engineer specializing in adversarial LLM evaluation, red-teaming, and advanced prompt design, building source-verified benchmark tasks that expose frontier-model web-search and retrieval failure modes. Previously delivered 1500+ production-grade LLM training and evaluation tasks on Google-aligned projects, promoted to Reviewer, backed by a software engineering background in Python, React, and production systems.",
   skills: [
     { category: "Adversarial Evaluation & Red-Teaming", items: ["Adversarial Testing", "Model Stumping", "Benchmark & Eval-Dataset Creation", "RAG Failure Analysis", "Source Verification", "Multi-Source Fact-Checking", "Ground-Truth Annotation"] },
     { category: "AI / LLM Engineering", items: ["Prompt Engineering", "Adversarial Prompt Design", "Multi-Hop Prompt Construction", "RLHF", "LLM Evaluation", "RAG Pipelines", "Hybrid Retrieval (BM25 + RRF)", "Guardrails & HITL"] },
@@ -29,7 +29,7 @@ export const RESUME_DATA = {
       highlights: [
         "Designed research-grade adversarial evaluation prompts ('model stumping') probing web-search and retrieval-reasoning failures in a frontier LLM; every accepted task had to defeat the model on ≥4 of 8 automated evaluation runs.",
         "Authored multi-hop, single-answer question/answer pairs with step-by-step 'Golden Trajectory' solution paths, verifying each fact against 3+ independent primary sources for full reproducibility.",
-        "Diagnosed the core failure mode — genuine information un-retrievability vs. reasoning difficulty — and codified a reusable prompt-construction methodology that lifted first-pass acceptance and throughput.",
+        "Diagnosed the core failure mode, genuine information un-retrievability vs. reasoning difficulty and codified a reusable prompt-construction methodology that lifted first-pass acceptance and throughput.",
         "Ran controlled evaluations (memory-off, extended-reasoning, 3-run + server-side 8-run auto-eval) and wrote precise failure justifications separating retrieval failures from ambiguity or prompt error.",
         "Drove tasks through a multi-stage QA pipeline (auto-eval → two human review rounds → audit), resolving granular reviewer feedback on prompt ambiguity, source validity, and source-to-trajectory mapping."
       ],

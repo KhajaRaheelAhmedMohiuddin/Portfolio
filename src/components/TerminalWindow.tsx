@@ -82,12 +82,15 @@ export default function TerminalWindow() {
   const [history, setHistory] = useState<string[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [logs, setLogs] = useState<CommandLog[]>([createInitLog()]);
+  const [isScrollable, setIsScrollable] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    if (containerRef.current) {
-      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    const el = containerRef.current;
+    if (el) {
+      el.scrollTop = el.scrollHeight;
+      setIsScrollable(el.scrollHeight > el.clientHeight + 1);
     }
   }, [logs]);
 
@@ -244,7 +247,7 @@ export default function TerminalWindow() {
 
       <div
         ref={containerRef}
-        data-lenis-prevent
+        {...(isScrollable ? { 'data-lenis-prevent': true } : {})}
         className="h-[200px] p-4 overflow-y-auto no-scrollbar scroll-smooth flex flex-col gap-2 overscroll-contain"
         onClick={() => inputRef.current?.focus({ preventScroll: true })}
       >
